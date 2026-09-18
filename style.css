@@ -928,4 +928,633 @@ section,
 .hero,
 .section {
     background: transparent !important;
+}/* =========================================
+   CATCHUB - MOBILE SAME AS DESKTOP LAYOUT
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    /* Keep sections like desktop */
+    .section {
+        width: 100%;
+        padding: 45px 18px !important;
+        box-sizing: border-box;
+    }
+
+    .container,
+    .section-container,
+    .footer-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto;
+    }
+
+    /* IMPORTANT:
+       Do NOT stack columns on mobile */
+    .two-column {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 18px !important;
+        text-align: left !important;
+    }
+
+    .text-content {
+        flex: 1 1 48%;
+        width: 48%;
+        min-width: 0;
+        text-align: left !important;
+    }
+
+    .image-area {
+        flex: 1 1 48%;
+        width: 48%;
+        min-width: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Main heading */
+    .hero h1,
+    .hero h2 {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+        letter-spacing: 2px !important;
+        white-space: normal !important;
+    }
+
+    /* Other headings */
+    .text-content h1,
+    .text-content h2 {
+        font-size: 14px !important;
+        line-height: 1.4 !important;
+        letter-spacing: 2px !important;
+    }
+
+    /* Paragraphs */
+    .text-content p,
+    .hero p {
+        font-size: 10px !important;
+        line-height: 1.5 !important;
+        margin-bottom: 12px !important;
+    }
+
+    /* Phone / section images */
+    .main-image {
+        width: 100% !important;
+        max-width: 180px !important;
+        height: auto !important;
+        object-fit: contain;
+    }
+
+    /* Download buttons */
+    .store-buttons {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: flex-start !important;
+        align-items: center;
+        gap: 5px !important;
+        margin-top: 12px !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .store-button {
+        width: auto !important;
+        height: 28px !important;
+        max-width: 48% !important;
+        object-fit: contain;
+    }
+
+    /* Hero should also remain side-by-side */
+    .hero {
+        min-height: auto !important;
+        padding-top: 45px !important;
+        padding-bottom: 45px !important;
+    }
+
+    /* Footer can stay centered */
+    footer {
+        padding: 40px 15px !important;
+        text-align: center;
+    }
+
+    footer .store-buttons {
+        justify-content: center !important;
+    }
+}
+
+
+/* Extra-small phones */
+
+@media (max-width: 430px) {
+
+    .section {
+        padding: 35px 12px !important;
+    }
+
+    .two-column {
+        gap: 10px !important;
+    }
+
+    .hero h1,
+    .hero h2,
+    .text-content h1,
+    .text-content h2 {
+        font-size: 11px !important;
+        letter-spacing: 1.4px !important;
+    }
+
+    .hero p,
+    .text-content p {
+        font-size: 8px !important;
+    }
+
+    .main-image {
+        max-width: 155px !important;
+    }
+
+    .store-button {
+        height: 23px !important;
+    }
+}/* =========================================
+   CATCHUB - LESS SPACING + WHITISH BACKGROUND
+   ========================================= */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fafafa 0%,
+            #f4f4f3 55%,
+            #f8f8f7 100%
+        ) !important;
+}
+
+
+/* REMOVE TOO MUCH SPACE BETWEEN SECTIONS */
+
+.section {
+    padding-top: 45px !important;
+    padding-bottom: 45px !important;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: auto !important;
+    padding-top: 45px !important;
+    padding-bottom: 45px !important;
+}
+
+
+/* COLUMN GAP */
+
+.two-column {
+    gap: 35px !important;
+}
+
+
+/* HEADINGS */
+
+.text-content h1,
+.text-content h2 {
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+}
+
+
+/* PARAGRAPHS */
+
+.text-content p {
+    margin-top: 0 !important;
+    margin-bottom: 15px !important;
+}
+
+
+/* STORE BUTTONS */
+
+.store-buttons {
+    margin-top: 15px !important;
+}
+
+
+/* IMAGES */
+
+.main-image {
+    margin: 0 !important;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding-top: 40px !important;
+    padding-bottom: 30px !important;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    body {
+        background:
+            linear-gradient(
+                145deg,
+                #fbfbfb 0%,
+                #f5f5f4 60%,
+                #fafafa 100%
+            ) !important;
+    }
+
+    .section {
+        padding: 24px 16px !important;
+    }
+
+    .hero {
+        padding-top: 28px !important;
+        padding-bottom: 28px !important;
+    }
+
+    .two-column {
+        gap: 12px !important;
+    }
+
+    .text-content h1,
+    .text-content h2 {
+        margin-bottom: 6px !important;
+    }
+
+    .text-content p {
+        margin-bottom: 8px !important;
+    }
+
+    .store-buttons {
+        margin-top: 8px !important;
+    }
+
+    footer {
+        padding: 28px 15px 22px !important;
+    }
+}/* =========================================
+   HERO FINAL SIZE / POSITION FIX
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    /* LEFT TEXT SIDE THORA CHOTA */
+    .hero .text-content {
+        flex: 0 0 42% !important;
+        width: 42% !important;
+    }
+
+    /* RIGHT PHONE IMAGE KO ZIADA SPACE */
+    .hero .image-area {
+        flex: 0 0 58% !important;
+        width: 58% !important;
+    }
+
+    /* CATCHUB LOGO THORA LEFT */
+    .hero .hero-content > img:first-child,
+    .hero .text-content > img:first-child,
+    .hero-logo,
+    .catchub-logo {
+        width: 130px !important;
+        max-width: 130px !important;
+
+        margin-left: -20px !important;
+        margin-bottom: 22px !important;
+
+        display: block !important;
+    }
+
+    /* WATCH. COMMUNICATE. CREATE. SMALLER */
+    .hero h1,
+    .hero h2 {
+        font-size: 15px !important;
+        letter-spacing: 3px !important;
+        line-height: 1.5 !important;
+        white-space: nowrap !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* DESCRIPTION */
+    .hero p {
+        font-size: 12px !important;
+        line-height: 1.5 !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* ANDROID + APPLE BUTTONS SMALLER */
+    .hero .store-buttons {
+        gap: 7px !important;
+        margin-top: 10px !important;
+        justify-content: center !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .hero .store-button {
+        height: 32px !important;
+        width: auto !important;
+        max-width: 46% !important;
+    }
+
+    /* RIGHT SIDE PHONES BIGGER */
+    .hero .main-image {
+        width: 100% !important;
+        max-width: 275px !important;
+        height: auto !important;
+        object-fit: contain !important;
+    }
+
+    /* HERO EXTRA SPACE REDUCE */
+    .hero {
+        padding-top: 32px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .hero .two-column {
+        gap: 12px !important;
+    }
+}
+
+
+/* VERY SMALL MOBILE */
+
+@media (max-width: 480px) {
+
+    .hero .text-content {
+        flex: 0 0 41% !important;
+        width: 41% !important;
+    }
+
+    .hero .image-area {
+        flex: 0 0 59% !important;
+        width: 59% !important;
+    }
+
+    .hero .hero-content > img:first-child,
+    .hero .text-content > img:first-child,
+    .hero-logo,
+    .catchub-logo {
+        width: 105px !important;
+        max-width: 105px !important;
+        margin-left: -12px !important;
+    }
+
+    .hero h1,
+    .hero h2 {
+        font-size: 10px !important;
+        letter-spacing: 1.5px !important;
+    }
+
+    .hero p {
+        font-size: 8px !important;
+    }
+
+    .hero .store-button {
+        height: 22px !important;
+    }
+
+    .hero .main-image {
+        max-width: 205px !important;
+    }
+}/* =========================================
+   CATCHUB HERO - FINAL BALANCED VERSION
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    /* HERO LEFT + RIGHT BALANCE */
+    .hero .two-column {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        gap: 20px !important;
+    }
+
+    /* LEFT SIDE - THORA MID KI TARAF */
+    .hero .text-content {
+        flex: 0 0 45% !important;
+        width: 45% !important;
+
+        text-align: center !important;
+
+        transform: translateX(25px);
+    }
+
+    /* RIGHT SIDE - ZIADA SPACE */
+    .hero .image-area {
+        flex: 0 0 55% !important;
+        width: 55% !important;
+
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+        transform: translateX(-15px);
+    }
+
+    /* CATCHUB LOGO - THORA BARA + CENTERED */
+    .hero .hero-content > img:first-child,
+    .hero .text-content > img:first-child,
+    .hero-logo,
+    .catchub-logo {
+        width: 165px !important;
+        max-width: 165px !important;
+
+        display: block !important;
+
+        margin: 0 auto 20px !important;
+    }
+
+    /* WATCH COMMUNICATE CREATE */
+    .hero h1,
+    .hero h2 {
+        font-size: 15px !important;
+        line-height: 1.45 !important;
+
+        letter-spacing: 2.5px !important;
+
+        white-space: nowrap !important;
+
+        margin: 0 0 10px !important;
+    }
+
+    /* DESCRIPTION */
+    .hero p {
+        font-size: 12px !important;
+        line-height: 1.5 !important;
+
+        margin: 0 0 10px !important;
+    }
+
+    /* APP BUTTONS - SMALL + SLIGHT RIGHT */
+    .hero .store-buttons {
+        display: flex !important;
+        flex-direction: row !important;
+
+        justify-content: center !important;
+        align-items: center !important;
+
+        gap: 8px !important;
+
+        margin-top: 12px !important;
+
+        transform: translateX(15px);
+    }
+
+    .hero .store-button {
+        height: 30px !important;
+        width: auto !important;
+
+        max-width: 46% !important;
+
+        object-fit: contain !important;
+    }
+
+    /* RIGHT PHONE IMAGE - BIGGER */
+    .hero .main-image {
+        width: 100% !important;
+        max-width: 345px !important;
+
+        height: auto !important;
+
+        object-fit: contain !important;
+    }
+
+    /* LESS EMPTY SPACE */
+    .hero {
+        min-height: auto !important;
+
+        padding-top: 34px !important;
+        padding-bottom: 34px !important;
+    }
+}
+
+
+/* =========================================
+   EXTRA SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .hero .text-content {
+        flex: 0 0 44% !important;
+        width: 44% !important;
+
+        transform: translateX(8px);
+    }
+
+    .hero .image-area {
+        flex: 0 0 56% !important;
+        width: 56% !important;
+
+        transform: translateX(-5px);
+    }
+
+    .hero .hero-content > img:first-child,
+    .hero .text-content > img:first-child,
+    .hero-logo,
+    .catchub-logo {
+        width: 120px !important;
+        max-width: 120px !important;
+
+        margin-bottom: 12px !important;
+    }
+
+    .hero h1,
+    .hero h2 {
+        font-size: 9px !important;
+        letter-spacing: 1.3px !important;
+    }
+
+    .hero p {
+        font-size: 8px !important;
+    }
+
+    .hero .store-buttons {
+        gap: 4px !important;
+
+        transform: translateX(6px);
+    }
+
+    .hero .store-button {
+        height: 21px !important;
+    }
+
+    .hero .main-image {
+        max-width: 225px !important;
+    }
+}
+
+
+/* =========================================
+   SOFT WHITISH WAVY BACKGROUND
+   ========================================= */
+
+html,
+body {
+    background:
+        radial-gradient(
+            ellipse at 10% 12%,
+            rgba(255, 255, 255, 0.98) 0%,
+            rgba(255, 255, 255, 0.45) 30%,
+            transparent 55%
+        ),
+
+        radial-gradient(
+            ellipse at 90% 30%,
+            rgba(220, 222, 224, 0.35) 0%,
+            rgba(255, 255, 255, 0.2) 42%,
+            transparent 65%
+        ),
+
+        radial-gradient(
+            ellipse at 15% 65%,
+            rgba(255, 255, 255, 0.95) 0%,
+            transparent 55%
+        ),
+
+        radial-gradient(
+            ellipse at 90% 85%,
+            rgba(210, 212, 214, 0.22) 0%,
+            transparent 58%
+        ),
+
+        linear-gradient(
+            155deg,
+            #fbfbfb 0%,
+            #f0f1f2 48%,
+            #fafafa 100%
+        ) !important;
+}
+
+
+/* SECTIONS TRANSPARENT SO WAVES SHOW */
+main,
+section,
+.section,
+.hero,
+footer {
+    background-color: transparent !important;
 }
