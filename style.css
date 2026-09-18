@@ -1,0 +1,931 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #eeeeee;
+    color: #222222;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   GENERAL SECTION
+========================================= */
+
+.section {
+    width: 100%;
+    background: #eeeeee;
+    padding: 70px 25px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   TWO COLUMN LAYOUT
+========================================= */
+
+.two-column {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.text-content {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   CATCHUB LOGO
+========================================= */
+
+.catchub-word-logo {
+    display: block;
+
+    width: 230px;
+    max-width: 100%;
+
+    height: auto;
+
+    margin-bottom: 25px;
+
+    background: transparent;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.hero h1 {
+    font-size: 17px;
+
+    font-weight: 500;
+
+    letter-spacing: 5px;
+
+    line-height: 1.7;
+
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+
+    color: #777777;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   HEADINGS
+========================================= */
+
+.text-content h2 {
+    font-size: 20px;
+
+    font-weight: 500;
+
+    letter-spacing: 7px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   PARAGRAPH
+========================================= */
+
+.text-content > p {
+    font-size: 17px;
+
+    font-weight: 300;
+
+    line-height: 1.45;
+
+    color: #777777;
+}
+
+
+/* =========================================
+   STORE BUTTONS
+========================================= */
+
+.store-buttons {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    background: transparent;
+}
+
+.store-button {
+    display: block;
+
+    width: 145px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    background: transparent;
+}
+
+
+/* =========================================
+   IMAGE AREA
+========================================= */
+
+.image-content {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: transparent;
+}
+
+
+/* =========================================
+   PHONE IMAGES
+========================================= */
+
+.main-image {
+    display: block;
+
+    width: 100%;
+
+    max-width: 450px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    background: transparent;
+}
+
+
+/* Hero phones slightly larger */
+
+.hero-image {
+    max-width: 470px;
+}
+
+
+/* =========================================
+   CHANNELS
+========================================= */
+
+.channels {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+/* =========================================
+   MESSAGES
+========================================= */
+
+.messages {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+/* =========================================
+   FUTURE
+========================================= */
+
+.future {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    width: 100%;
+
+    background: #eeeeee;
+
+    padding: 45px 20px 55px;
+}
+
+.footer-container {
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   FOOTER DOWNLOAD TEXT
+========================================= */
+
+.download-text {
+    font-size: 15px;
+
+    color: #444444;
+
+    margin-bottom: 15px;
+}
+
+.footer-buttons {
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact {
+    font-size: 13px;
+
+    color: #444444;
+
+    margin-bottom: 25px;
+}
+
+.contact a {
+    color: #59a9ce;
+
+    text-decoration: none;
+}
+
+
+/* =========================================
+   PERATUDE LOGO
+========================================= */
+
+.peratude-logo {
+    display: block;
+
+    width: 85px;
+
+    max-width: 100%;
+
+    height: auto;
+
+    object-fit: contain;
+
+    background: transparent;
+}
+
+
+/* =========================================
+   IMPORTANT:
+   TRANSPARENT PNG IMAGES
+========================================= */
+
+img {
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .two-column {
+        gap: 40px;
+    }
+
+    .main-image {
+        max-width: 400px;
+    }
+
+    .hero-image {
+        max-width: 420px;
+    }
+
+    .catchub-word-logo {
+        width: 210px;
+    }
+
+    .hero h1 {
+        font-size: 15px;
+
+        letter-spacing: 4px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .section {
+        padding: 55px 20px;
+    }
+
+    .two-column {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    /* HERO */
+
+    .hero .text-content {
+        order: 1;
+    }
+
+    .hero .image-content {
+        order: 2;
+    }
+
+
+    /* CHANNELS */
+
+    .channels .image-content {
+        order: 1;
+    }
+
+    .channels .text-content {
+        order: 2;
+    }
+
+
+    /* MESSAGES */
+
+    .messages .text-content {
+        order: 1;
+    }
+
+    .messages .image-content {
+        order: 2;
+    }
+
+
+    /* FUTURE */
+
+    .future .image-content {
+        order: 1;
+    }
+
+    .future .text-content {
+        order: 2;
+    }
+
+
+    .catchub-word-logo {
+        width: 190px;
+    }
+
+    .hero h1 {
+        font-size: 14px;
+
+        letter-spacing: 3px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .text-content h2 {
+        font-size: 18px;
+
+        letter-spacing: 5px;
+    }
+
+    .text-content > p {
+        font-size: 15px;
+    }
+
+    .main-image,
+    .hero-image {
+        width: 100%;
+
+        max-width: 400px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .section {
+        padding: 45px 15px;
+    }
+
+    .two-column {
+        gap: 30px;
+    }
+
+    .catchub-word-logo {
+        width: 175px;
+    }
+
+    .hero h1 {
+        font-size: 12px;
+
+        letter-spacing: 2.5px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .text-content h2 {
+        font-size: 17px;
+
+        letter-spacing: 4px;
+    }
+
+    .text-content > p {
+        font-size: 14px;
+    }
+
+    .store-button {
+        width: 130px;
+    }
+
+    .main-image,
+    .hero-image {
+        max-width: 340px;
+    }
+
+    footer {
+        padding-top: 35px;
+    }
+
+    .peratude-logo {
+        width: 75px;
+    }
+
+}
+/* =========================================
+   FINAL VISUAL IMPROVEMENTS
+   Layout/positions remain unchanged
+   ========================================= */
+
+
+/* PAGE BACKGROUND */
+html,
+body {
+    background-color: #d6d8da !important;
+}
+
+
+/* ALL MAIN AREAS SAME GREY */
+main,
+section,
+.section,
+.hero,
+.channels,
+.messages,
+.future,
+footer {
+    background-color: transparent !important;
+}
+
+
+/* MAIN HERO HEADING */
+.hero h1,
+.hero h2 {
+    font-size: 32px !important;
+    line-height: 1.45 !important;
+    font-weight: 700 !important;
+    letter-spacing: 7px !important;
+    color: #222222 !important;
+}
+
+
+/* HERO DESCRIPTION */
+.hero p {
+    font-size: 20px !important;
+    line-height: 1.6 !important;
+    color: #555555 !important;
+}
+
+
+/* CHANNELS / MESSAGES / FUTURE HEADINGS */
+section h2,
+.section h2 {
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    letter-spacing: 7px !important;
+    color: #242424 !important;
+}
+
+
+/* SECTION DESCRIPTION TEXT */
+section p,
+.section p {
+    font-size: 19px !important;
+    line-height: 1.6 !important;
+    color: #5c5c5c !important;
+}
+
+
+/* KEEP ALL IMAGES NATURAL */
+img {
+    opacity: 1 !important;
+}
+
+
+/* PHONE IMAGES - ONLY ADD A VERY LIGHT SHADOW */
+.main-image {
+    filter: drop-shadow(0 12px 14px rgba(0, 0, 0, 0.10));
+}
+
+
+/* STORE BUTTONS */
+.store-button {
+    transition: transform 0.25s ease;
+}
+
+.store-button:hover {
+    transform: translateY(-3px);
+}
+
+
+/* FOOTER TEXT */
+footer,
+footer p {
+    color: #444444 !important;
+}
+
+
+/* MOBILE - DON'T MAKE CONTENT TOO SMALL */
+@media (max-width: 768px) {
+
+    .hero h1,
+    .hero h2 {
+        font-size: 25px !important;
+        letter-spacing: 5px !important;
+    }
+
+    section h2,
+    .section h2 {
+        font-size: 25px !important;
+        letter-spacing: 5px !important;
+    }
+
+    .hero p,
+    section p,
+    .section p {
+        font-size: 17px !important;
+    }
+}/* HERO MAIN TEXT - CLEAN & ELEGANT */
+.hero h1,
+.hero h2 {
+    font-family: Arial, Helvetica, sans-serif !important;
+
+    font-size: 25px !important;
+    font-weight: 500 !important;
+
+    letter-spacing: 5px !important;
+    line-height: 1.5 !important;
+
+    color: #252525 !important;
+
+    margin-top: 28px !important;
+    margin-bottom: 14px !important;
+
+    white-space: nowrap !important;
+}
+
+
+/* HERO DESCRIPTION */
+.hero p {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+
+    letter-spacing: 0.2px !important;
+    line-height: 1.5 !important;
+
+    color: #5f5f5f !important;
+
+    margin-top: 0 !important;
+    margin-bottom: 24px !important;
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .hero h1,
+    .hero h2 {
+        font-size: 20px !important;
+        letter-spacing: 3px !important;
+        white-space: normal !important;
+    }
+
+    .hero p {
+        font-size: 16px !important;
+    }
+}/* =====================================
+   SOFT STYLED GREY BACKGROUND
+   Layout / positions will NOT change
+   ===================================== */
+
+body {
+    background-color: #d6d8da !important;
+
+    background-image:
+        radial-gradient(
+            ellipse at 10% 15%,
+            rgba(255, 255, 255, 0.55) 0%,
+            rgba(255, 255, 255, 0.15) 28%,
+            transparent 48%
+        ),
+
+        radial-gradient(
+            ellipse at 90% 35%,
+            rgba(255, 255, 255, 0.45) 0%,
+            transparent 45%
+        ),
+
+        radial-gradient(
+            ellipse at 15% 70%,
+            rgba(255, 255, 255, 0.35) 0%,
+            transparent 42%
+        ),
+
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.20) 0%,
+            transparent 35%,
+            rgba(120, 125, 130, 0.08) 70%,
+            transparent 100%
+        ) !important;
+
+    background-attachment: fixed !important;
+}
+
+
+/* Keep sections transparent so body design shows through */
+main,
+section,
+.section,
+.hero,
+.channels,
+.messages,
+.future,
+footer {
+    background-color: transparent !important;
+}
+
+
+/* Soft decorative wave between areas */
+.section {
+    position: relative;
+}
+
+.section::before {
+    content: "";
+    position: absolute;
+
+    width: 420px;
+    height: 160px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    filter: blur(2px);
+
+    right: -160px;
+    top: 15%;
+
+    transform: rotate(-12deg);
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+
+/* Alternate wave on every second section */
+.section:nth-child(even)::before {
+    right: auto;
+    left: -170px;
+
+    transform: rotate(12deg);
+}
+
+
+/* Keep actual content above background decoration */
+.section > * {
+    position: relative;
+    z-index: 1;
+}/* =========================================
+   ABSTRACT LIGHT GREY WAVE BACKGROUND
+   ========================================= */
+
+html {
+    background: #d8dadd;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+
+    background:
+        radial-gradient(
+            ellipse 900px 300px at 15% 8%,
+            rgba(255,255,255,0.95) 0%,
+            rgba(255,255,255,0.35) 45%,
+            transparent 70%
+        ),
+
+        radial-gradient(
+            ellipse 1000px 320px at 90% 30%,
+            rgba(255,255,255,0.75) 0%,
+            rgba(255,255,255,0.18) 50%,
+            transparent 72%
+        ),
+
+        radial-gradient(
+            ellipse 850px 280px at 10% 58%,
+            rgba(255,255,255,0.75) 0%,
+            transparent 70%
+        ),
+
+        radial-gradient(
+            ellipse 1000px 320px at 95% 82%,
+            rgba(255,255,255,0.70) 0%,
+            transparent 70%
+        ),
+
+        linear-gradient(
+            135deg,
+            #e4e6e8 0%,
+            #cfd2d5 45%,
+            #e2e4e6 100%
+        );
+
+    background-attachment: fixed;
+}
+
+
+/* =========================================
+   BIG CURVED WAVE
+   ========================================= */
+
+body::before {
+    content: "";
+    position: fixed;
+
+    width: 150%;
+    height: 330px;
+
+    left: -25%;
+    top: 32%;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,0.55),
+            rgba(255,255,255,0.10)
+        );
+
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+
+    transform: rotate(-5deg);
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+/* =========================================
+   SECOND SOFT WAVE
+   ========================================= */
+
+body::after {
+    content: "";
+    position: fixed;
+
+    width: 150%;
+    height: 280px;
+
+    left: -20%;
+    top: 68%;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,0.08),
+            rgba(255,255,255,0.55)
+        );
+
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+
+    transform: rotate(5deg);
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+/* =========================================
+   KEEP YOUR PAGE ABOVE WAVES
+   ========================================= */
+
+main,
+header,
+footer,
+section,
+.hero,
+.section,
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* IMPORTANT:
+   sections transparent so waves are visible
+*/
+
+main,
+header,
+footer,
+section,
+.hero,
+.section {
+    background: transparent !important;
+}
